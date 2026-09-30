@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de privacidad — Centro de Producción</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+  :root{
+    --bg:#f6f4f0; --surface:#ffffff; --ink:#201c18; --ink-soft:#5a5248;
+    --line:#e2ddd3; --accent:#a8472b;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#181513; --surface:#211d1a; --ink:#efeae3; --ink-soft:#b3a99c;
+      --line:#38322c; --accent:#e0794f; color-scheme: dark;
+    }
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Source Sans 3", ui-sans-serif, system-ui, sans-serif;
+    line-height:1.6; padding-inline:20px;}
+  .wrap{max-width:720px; margin:0 auto; padding-block:48px 80px;}
+  h1,h2,h3{font-family:"Fraunces", Georgia, serif; font-weight:600; margin:0 0 .4em;}
+  h1{font-size:clamp(1.6rem,4.4vw,2.1rem);}
+  h3{font-family:inherit; font-size:1rem; margin-top:1.6em;}
+  nav{margin:20px 0 8px;}
+  nav a{font-size:.88rem; color:var(--ink); text-decoration:none;
+    border:1px solid var(--line); border-radius:999px; padding:7px 16px;
+    background:var(--surface);}
+  nav a:hover{border-color:var(--accent); color:var(--accent);}
+  .meta{font-size:.85rem; color:var(--ink-soft); margin-top:6px;}
+  ul{max-width:64ch; padding-left:1.2em;}
+  li{margin-bottom:.5em;}
+  p{max-width:68ch;}
+  a.inline{color:var(--accent);}
+  footer{margin-top:64px; padding-top:24px; border-top:1px solid var(--line);
+    font-size:.85rem; color:var(--ink-soft);}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Política de privacidad</h1>
+    <p class="meta">Última actualización: 2026-09-30</p>
+    <nav><a href="index.html">← Volver</a></nav>
+
+    <p>Esta aplicación conecta, vía las APIs oficiales de YouTube (Google) y TikTok, únicamente con las cuentas que su propio dueño autoriza explícitamente mediante OAuth. No se conecta con ninguna otra cuenta ni recibe autorizaciones de terceros.</p>
+
+    <h3>Qué datos maneja</h3>
+    <ul>
+      <li>Los tokens de acceso (OAuth) que YouTube y TikTok emiten al autorizar la app, guardados localmente en la computadora del operador — nunca se suben a ningún repositorio público ni se comparten con nadie.</li>
+      <li>El contenido de video, título, descripción y tags que el propio operador escribe para sus propios videos, usados únicamente para subirlos a sus propias cuentas.</li>
+      <li>Información básica de la cuenta autorizada (nombre del canal o del perfil) para confirmar que la autorización se hizo contra la cuenta correcta.</li>
+    </ul>
+
+    <h3>Qué NO hace esta app</h3>
+    <ul>
+      <li>No recopila, almacena ni comparte datos de ningún usuario de YouTube o TikTok que no sea el propio operador.</li>
+      <li>No vende, cede ni usa ningún dato con fines publicitarios.</li>
+      <li>No accede a mensajes privados, contactos, ni a ninguna cuenta más allá de las explícitamente autorizadas.</li>
+    </ul>
+
+    <h3>Revocar el acceso</h3>
+    <p>El operador puede revocar el permiso en cualquier momento desde la configuración de su propia cuenta de Google (myaccount.google.com → Seguridad → Apps de terceros) o de TikTok (Configuración → Seguridad → Apps y sitios web conectados).</p>
+
+    <h3>Contacto</h3>
+    <p>Para cualquier consulta sobre esta política: <a class="inline" href="mailto:joaquinbelennn@gmail.com">joaquinbelennn@gmail.com</a></p>
+
+    <footer>Un Día en la Historia &amp; Crimen en Líneas — herramienta interna de producción, uso personal.</footer>
+  </div>
+</body>
+</html>

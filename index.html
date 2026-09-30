@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centro de Producción</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+  :root{
+    --bg:#f6f4f0; --surface:#ffffff; --ink:#201c18; --ink-soft:#5a5248;
+    --line:#e2ddd3; --accent:#a8472b;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#181513; --surface:#211d1a; --ink:#efeae3; --ink-soft:#b3a99c;
+      --line:#38322c; --accent:#e0794f; color-scheme: dark;
+    }
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Source Sans 3", ui-sans-serif, system-ui, sans-serif;
+    line-height:1.6; padding-inline:20px;}
+  .wrap{max-width:720px; margin:0 auto; padding-block:48px 80px;}
+  h1,h2{font-family:"Fraunces", Georgia, serif; font-weight:600; margin:0 0 .4em;}
+  h1{font-size:clamp(1.9rem,5vw,2.6rem);}
+  .kicker{font-size:.78rem; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--accent); font-weight:600; margin-bottom:.6em;}
+  .lede{color:var(--ink-soft); font-size:1.05rem; max-width:60ch;}
+  nav{display:flex; gap:10px; flex-wrap:wrap; margin:28px 0 8px;}
+  nav a{font-size:.88rem; color:var(--ink); text-decoration:none;
+    border:1px solid var(--line); border-radius:999px; padding:7px 16px;
+    background:var(--surface);}
+  nav a:hover{border-color:var(--accent); color:var(--accent);}
+  section{margin-top:40px;}
+  .card{background:var(--surface); border:1px solid var(--line);
+    border-radius:14px; padding:20px 24px; margin:18px 0;}
+  .card h3{font-family:inherit; font-size:.95rem; font-weight:700; margin:0 0 6px;}
+  .card p{margin:0; color:var(--ink-soft); font-size:.95rem;}
+  .channels{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:14px; margin-top:18px;}
+  p{max-width:68ch;}
+  footer{margin-top:64px; padding-top:24px; border-top:1px solid var(--line);
+    font-size:.85rem; color:var(--ink-soft);}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="kicker">Herramienta interna de producción</div>
+    <h1>Centro de Producción</h1>
+    <p class="lede">Panel de referencia de la herramienta que uso para producir y publicar el contenido de mis propios canales. No es un producto público ni recibe usuarios externos.</p>
+
+    <nav>
+      <a href="privacy.html">Política de privacidad</a>
+    </nav>
+
+    <section>
+      <p>Esta aplicación es de uso estrictamente personal. La usa un solo operador — el dueño de los canales listados abajo — para automatizar tareas propias de producción de video: generar guion, voz e imágenes, armar el render final, y subir el resultado a las cuentas de YouTube y TikTok que esa misma persona administra.</p>
+      <p>No está pensada para que la use ni la instale nadie más, no tiene un frente público, y no interactúa con cuentas de terceros.</p>
+
+      <div class="channels">
+        <div class="card">
+          <h3>Un Día en la Historia</h3>
+          <p>Canal de historia narrada, formato "24 horas en..." y curiosidades históricas.</p>
+        </div>
+        <div class="card">
+          <h3>Crimen en Líneas</h3>
+          <p>Canal de true crime narrado, casos reales resueltos por un detalle concreto.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>Un Día en la Historia &amp; Crimen en Líneas — herramienta interna de producción, uso personal.</footer>
+  </div>
+</body>
+</html>
